@@ -1,0 +1,1980 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "GigSeekr - simple",
+  "desc": "A simplified LUIS model for GigSeekr bot",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "EntitySearch"
+    },
+    {
+      "name": "EventSearch"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Utilities.Cancel",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Cancel"
+      }
+    },
+    {
+      "name": "Utilities.Confirm",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Confirm"
+      }
+    },
+    {
+      "name": "Utilities.FinishTask",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "FinishTask"
+      }
+    },
+    {
+      "name": "Utilities.Goback",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Goback"
+      }
+    },
+    {
+      "name": "Utilities.Help",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Help"
+      }
+    },
+    {
+      "name": "Utilities.Repeat",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Repeat"
+      }
+    },
+    {
+      "name": "Utilities.ShowNext",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "ShowNext"
+      }
+    },
+    {
+      "name": "Utilities.ShowPrevious",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "ShowPrevious"
+      }
+    },
+    {
+      "name": "Utilities.StartOver",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "StartOver"
+      }
+    },
+    {
+      "name": "Utilities.Stop",
+      "inherits": {
+        "domain_name": "Utilities",
+        "model_name": "Stop"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "name": "Artist"
+    },
+    {
+      "name": "ArtistType"
+    },
+    {
+      "name": "EventType",
+      "children": [
+        "Gig",
+        "Residency",
+        "ClubNight",
+        "OpenMic",
+        "Showcase"
+      ]
+    },
+    {
+      "name": "Genre"
+    },
+    {
+      "name": "Location"
+    },
+    {
+      "name": "Venue"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Artist",
+      "mode": true,
+      "words": "Tony Morley,Ronny Hughes,Jon Keats,Sion Russell Jones,Tim Shaw,Paul Jones,Jimmy Coburn,Tony Coburn,Jay Murray,New Orleans Street Band,The Amazing Kappa,Marie Batchelder,Teddy,The Spokes,Goose,Colum Regan,Richard Batty,The Rockits,The Little Giants,Royal Scottish National Orchestra,From The Jam,Mona Lisa Twins,Open Mic,Limehouse Lizzy,City Of Birmingham Symphony Orchestra,Ian Prowse,Jools Holland,Face Value,The Halle,The Shakers,The Smyths,Thriller Live,Bournemouth Symphony Orchestra,Royal Philharmonic Orchestra,The Cavern Club Beatles,The Doors Alive,La Touche,Nick Robinson,Eri Yamamoto,The Cave Dwellers,Tony Mac,Philharmonia Orchestra,The Grey Twins,The Beat,Rob Cross,Made in Liverpool,Lefty Ferguson,Robert Cross,Craig Charles,Rumours Of Fleetwood Mac,Marc Kenny,Steve Howard,Tony Skeggs,Royal Liverpool Philharmonica Orchestra,The Bootleg Beatles,Chas & Dave,The Magic of Motown,Dreadzone,Guns 2 Roses,Gerry Breslin,Gil Gann,Bad Manners,John Mulville,Nowhere Boys,Paul Carrack,T - Rextasy,Clark Gilmour,The 1975,The Mersey Beatles,Brandon Holder,UB40,Smokestack,Mad Dog McRea,Absolute Bowie,Stacy Mitchhart,Stiff Little Fingers,J . P Newton,Honey Fungus,Oliver Darling,JK & the Family Jules,Fleetwood Bac,The Beekays,Royal Northern Sinfonia,Whole Lotta Led,Scottish Chamber Orchestra,Titanic Jazz Band,UK Subs,Basil,Little Mix,Funeral for a Friend,Larry Miller,Ulster Orchestra,Peace,Paul McDonough,Dalriada,Alabama 3,John Otway,Schiehallion,Beans On Toast,Big Country,Catfish and the Bottlemen,Bayou Deville,The Illegal Eagles,Alyson Williams,Wille and the Bandits,Livewire AC / DC,Lee Benoit & The Bayou Stompers,Sweet Georgia Brown,The Stranglers,Jimmy Carr,Jake Bugg,Dirty DC,The Australian Pink Floyd,The Bon Jovi Experience,Lee Vasey Band,Mark Morriss,Tom McDermott,The Selecter,Dr Feelgood,Hayseed Dixie,The ELO Experience,The Sherlocks,Blossoms,Showaddywaddy,DJ Mikie,DJ Darren,Joe Kane,Chantel McGregor,The Blockheads,Buck Mccoy,Sinatra,Big Joe Louis,Frank Turner,Martin Harley,The Quireboys,Dub Pistols,Wes Cook Band,The View,Public Service Broadcasting,The Rifles,London Symphony Orchestra,King King,Bastille,Bellowhead,Monty Banks,Niall Kelly,Coasts,Finnegan ' s Wake,Cash,The Johnny Cash Roadshow,Lucy Rose,Wheatus,The Overtones,Olly Murs,Anna LaPrad,Mr . Scruff,The Wedding Present,Sleaford Mods,Little Comets,The Damned,Hot 8 Brass Band,S & M,Bon Giovi,Lucy Spraggan,Seth Lakeman,The Sun Street Stompers,Fritz Hester,Fairport Convention,Jack Savoretti,Ben Montague,Wishbone Ash,Wolf Alice,Aynsley Lister,Peter Hook & The Light,The Drifters,Definitely Mightbe,The Sex Pistols Experience,We Are Scientists,Gospel Brunch,Hells Bells,Gentleman ' s Dub Club,Talon,Nine Below Zero,Zeu Azevedo & Ana Karina Duo,The Wave Pictures,Collabro,Brother & Bones,Cast,Jaws,Nathan Carter,John Cooper Clarke,Turin Brakes,The Shires,Toseland,Status Quo,Joanne Shaw Taylor,Lucas Davenport,London Philharmonic Orchestra,Paloma Faith,Gerry Coogan,The Courteeners,Levellers,Meschiya Lake,Kodaline,Ruarri Joseph,Slow Club,Tony Seville,Joe Brown,Johnny T,Ward Thomas,A Foreigner ' s Journey,Ferocious Dog,Dr . Hook,Space,Jazz Morley,Slaves,10CC,Martin Stephenson & the Daintees,Mike Peters,One Direction,John Riggins,King Charles,Rebirth Brass Band,Brit Floyd,Dodgy,The Bowie Experience,The Blokes,Electric Six,The Enemy,Adam Ant,Pete Boulter & The Bluematics,The Strypes,The South,Who ' s Next,Russell Brand,Paper Aeroplanes,David Baddiel,Simple Minds,Don Broco,The Groovinators,Eddi Reader,Augustines,Kast Off Kinks,Spector,Russell Watson,Passenger,Nick Harper,Gnarwolves,Martin Simpson,Martyn Joseph,Omid Djalili,For Folk Sake,The Wailers,Young Kato,Vince Moreno,Fred Zeppelin,DJ D - Vyzor,The Jamboree Collective,Take That,BBC Philharmonic Orchestra,Chris Shrader,Lonely The Brave,John Zamojcin,Moulettes,Newton Faulkner,Nearly Dan,Palma Violets,Kate Rusby,Lewis Watson,Small Fakers,The Cavern Beatles,Barry Steele,Arcane Roots,The Clone Roses,Hozier,Drenge,The Dominos,Fearless Vampire Killers,Eliza and the Bear,The Fureys,UK Foo Fighters,Caro Emerald,The Temperance Movement,The Proclaimers,Laurence Jones,The Kooks,Buzzcocks,The Complete Stone Roses,Callum Mac,Alfie Boe,The Answer,Fish,Skindred,Scott Matthews,John Karl,Joan Armatrading,Room 94,Sundara Karma,Michael Ball,Ben Poole,Spear of Destiny,Lulu,Mallory Knox,Hawklords,Ed Sheeran,Lower Than Atlantis,Anti - Nowhere League,The Crookes,Legend,Arturo O ' Farrill Afro Latin Jazz Orchestra,Absent Friends,Blackberry Smoke,Gabrielle Aplin,Jake Morley,Sonic Boom Six,The Simon & Garfunkel Story,Rizzle Kicks,Rob Heron and his Tea Pad Orchestra,Reel Big Fish,Jon Gomm,Keston Cobblers Club,Nothing But Thieves,Mike & The Mechanics,Martha Tilston,The Guns N Roses Experience,Deacon Blue,The Blackout,Allusondrugs,Nina Conti,Glass Animals,Mostly Autumn,Ben Ottewell,Bars and Melody,Ultimate Eagles,Fickle Friends,Squeeze,Al Murray,Temples,Alastair Caplin,Elio Pace,Gavin James,Ian Siegal,Johnny Marr,The Searchers,The Twang,You Me At Six,Teleman,Show Of Hands,Joe Krown,Glenn Tilbrook,The Glenn Miller Orchestra,Focus,Duke Special,The Vamps,Stewart Lee,Simone Felice,Benjamin Francis Leftwich,The Wytches,By The Rivers,The Computers,Stornoway,The Pigeon Detectives,BeSpoke,BBC Symphony Orchestra,Harlem Gospel Choir,Honeyblood,Jamie Roche,Jack,Lee Scratch Perry,Lee Memphis King,Imelda May,Secret Affair,Ray Gelato,The Queen Extravaganza,Shane Filan,Toyah,London Grammar,Hacktivist,Sham 69,Peter Andre,Skinny Lister,Alexis & The Samurai,The Cribs,The Blues Band,The Urban Voodoo Machine,Christy Moore,The Christians,All Time Low,Akala,Steve Hackett,Are You Experienced ?,James Bay,Elvis Costello,Lloyd Cole,The Loud Hailers,JP Cooper,Natalie Williams,One Night Of Queen,The Total Stone Roses,The Skints,Twin Atlantic,Patent Pending,The Lancashire Hotpots,Les McKeown ’ s Legendary Bay City Rollers,Gary Numan,Chris Mouch Band,Bring Me The Horizon,Y & T,Xander & the Peace Pirates,The ZZ Tops,Bear ' s Den,Martha Reeves & The Vandellas,British Sea Power,Lewis,Max Raptor,Tragedy,Solemn Sun,Scott Bradlee,The Rollin ' Stoned,The Lovely Eggs,The Manfreds,AC / DC UK,Andy Fairweather Low,Atlantic Soul Orchestra,Gerry & The Pacemakers,Grove Street Stompers Dixieland Jazz Band,Ezio,Foxes,The Fratellis,The Dunwells,China Crisis,Heaven 17,Dave Browne & Clare Peelo,Dave McPherson,Hawkwind,James Taylor Quartet,Amadou Gaye,Albert Lee and Hogans Heroes,Neon Waltz,Cara Dillon,Creole Cooking Jazz Band,The Matte Gray Band,Paul Heaton,Nell Bryden,Royal Blood,The Saw Doctors,Sam Hare,Post Alley Folk,Steve Harley & Cockney Rebel,Stew Cutler,The Sunshine Underground,The Sleeping Souls,Smokin Shamrocks,Sweet Baboo,Rae Morris,Raglans,Raphael & Norbert,The Royal Rounders,Never The Bride,The Orb,Circa Waves,Brainscape,We Are The Ocean,Romesh Ranganathan,Andre Rieu,Antarctic Monkeys,Gypsy ' s Wish,Deaf Havana,Dexters,Deepozz,Dizraeli and The Small Gods,Eve Silber,Yuichi Hirakawa,The Xcerts,The Wonder Stuff,The Zombies,DJ Emmo,Jo Harman,PINS,Bob Dylan,Boo Hewerdine,Brian Twohey,Boyce Avenue,Courtney Barnett,New Model Army,McBusted,Magnum,Kids In Glass Houses,Russ Dewbury,Random Hand,Tom Odell,Some Like It Hot,The Staves,The Rat Pack Live,Pierce The Veil,The Rumours,Kathryn Roberts & Sean Lakeman,Paul Conroy,Chicha Libre,The Dandy Horses,Maximo Park,Reverend and The Makers,Paul Weller,George Ezra,Dry The River,Everything Everything,Ezra Furman,Wednesday 13,Yellowcard,Uncle Sugar,The Two Of Us,The Front Bottoms,Dan Owen,Gaz Brookfield,Go West,Happy Mondays,Jerry Jumonville,DJ Jay Welch,The Hunna,Elbow,Black Peaks,Cate Le Bon,Natives,Vintage Trouble,Amber Run,Nathan Nelson,Mentallica,Memphis May Fire,The MeatMen,Jungle,Matt Woosey,Level 42,Stacey Kent,Son Of Dave,TRC,The Ukulele Orchestra,Think Floyd,Strawberry Fields,Trembling Bells,Sons Of Soul,The Subways,DJ Rosco,Prides,Mandingo Ambassadors,Marika Hackman,John Wilson Orchestra,The Mouse Outfit,Panic Room,Parr Jazz,The Ramonas,1 to 1,999,Mark Lanegan,Blue Rose Code,Bob Log III,InMe,God Damn,David Ford,Frightened Rabbit,Fletch ' s Brew,Fleetwood Mac,The Flavours,Elkie Brooks,Virgil And The Accelerators,Walter Trout,The Wurzels,The Bohemians,Example,Every Time I Die,Foals,DJ David Mortal,Gary Murphy Band,Gaz Coombes,Hazel O ' Connor,Jack Garratt,Blackbeard ' s Tea Party,Bombay Bicycle Club,Boot Led Zeppelin,Bryan Ferry,The Darkness,Dan Baird and Homemade Sin,Fatherson,Evil Scarecrow,ABBA Mania,5 Seconds of Summer,BBC National Orchestra of Wales,Lazy Habits,The Last Carnival,Public Image Ltd ( PIL ),Police Dog Hogan,Sarah McCoy & The Oopsie Daisies,The Spitfires,The Specials,Twenty One Pilots,Sunset Sons,This Is The Kit,Snarky Puppy,Swim Deep,Rudimental,Kontraband,Lola Gulley,Letz Zep,Paul Walker,Neville Staple,Ocean Colour Scene,Micky Flanagan,Ben Howard,Kate Nash,Russell Kane,Cloudbusting,Reef,Jess Glynne,alt - J,Chvrches,Geno Washington,GUN,Fossil Collective,Yashin,The Vryll Society,Wilko Johnson,Frankie & The Heartstrings,Fearne,The Fall,G4,Jacqui Abbott,Hugh Cornwell,Hudson Taylor,Chris Wood,Becki McLeod,Ben Portsmouth,The Bachelors,Band of Skulls,Missing Andy,Maverick Sabre,Kunt and The Gang,Saint Raymond,Spring King,Smokin Aces,Therapy ?,Ugly Duckling,Toy,The Treatment,Thea Gilmore,Terry Reid,Sleeping With Sirens,The Soul Band,Stu Larsen,Ryan Keen,Roddy Woomble,Ruts DC,The Rollin Clones,Rhett Barrow,Roxy Magic,The Sex Pissed Dolls,Peter Lindman,Marmozets,Mercury,Nathaniel Rateliff,Ben Watt,Alexander O ' Neal,Greg Davies,James Arthur,Luke Sital - Singh,Milton Jones,Clean Bandit,Damien Dempsey,Brandon Harris,Joe McElderry,The Jim Jones Revue,DJ Gerry Lyons,Georgina Davey,Harold Allen,Disclosure,Dick Laurie & the Elastic Band,Echo & the Bunnymen,Eagulls,Kaiser Chiefs,Years & Years,The Vaccines,Foy Vance,John Bramwell,The Hollies,Bipolar Sunshine,The Coronas,The Sons Of Pitches,[ Spunge ],Shed Seven,VANT,Big Boy Bloater,Beardyman,BBC Scottish Symphony Orchestra,The Amazons,Molotov Jukebox,The Modfathers,Jon Cleary,Sheelanagig,Ross Noble,The Stylistics,The Travelling Band,Twisted Wheel,Stereophonics,Rick Astley,Purple Rain,Katy Perry,Lanterns On The Lake,The Magic Gang,Moose Blood,Mojo Big Band,Area 11,Billy Ocean,KT Tunstall,ChameleonsVox,The Human League,Amon Amarth,Chris Weaver,Buddy Holly & The Cricketers,The Handsome Family,Enter Shikari,Velvet Voyage,The Vibrators,While She Sleeps,Villagers,The Who,Hunter & The Bear,Emancipator,The Feeling,Future Of The Left,Demob Happy,james,Billy Lockett,Bowling for Soup,Blair Dunlop,Canterbury,Chris Hatton,Cockney Rejects,Cher,Danny and the Champions Of The World,Pulled Apart By Horses,Nina Nesbitt,DJ Format,Dutch Uncles,Bruno Mars,Ruby Wax,Andrew Roachford,Black Star Riders,Bad Boys Of Blues,Martin McDaniel,Marcus Bonfanti,Less Than Jake,Li ' nards Many Moods,DJ Liam Young,John Smith,Richard Hawley,Phil Davis,Saxon,Superfood,Steel Panther,Submotion Orchestra,Simon McBride,Rival Sons,The Royal Marines Band,Pure Love,Rahj Mason,Lau,Lionel Richie,Let ' s Hang On,Bella Hardy,Black Veil Brides,Birdland Big Band,Clutch,Kings of Leon,Brendan O ' Carroll,Black Stone Cherry,3 Daft Monkeys,Boy & Bear,The Bohicas,Jamie Button,Ian Shaw,Haim,Darlia,Who ' s Who,Whitney - Queen Of The Night,The Wonder Years,The War On Drugs,The Virginmarys,We Were Promised Jetpacks,Django Django,Dog Is Dead,Dorje,Ellie Goulding,High Tyde,The Hoosiers,Jessie J,John Grant,Cancer Bats,Connie Lush,The Smiths Ltd,Drake,The Magic Numbers,Los Pacaminos,Knotslip,Katherine Jenkins,MrSteveBob,Nik Kershaw,Nigel Kennedy,Neck Deep,Peatbog Faeries,Shonen Knife,The Slackers,Special Kinda Madness,Steve Cradock,The Subterraneans,UFO,Tonight Alive,Scorpion Jack,Robin Trower,Red Organ Trio,The Orwells,Mark Weliky Trio,Martin Turner ' s Wishbone Ash,Kathryn Williams,Keep it Cash,John Mayall,DJ Jo Bliss,Madness,Busted,Frank Carter & The Rattlesnakes,Bonobo,The Courtyard Kings,Bryan Adams,Jeffrey Lewis,Imagine Dragons,Jah Wobble,Georgie Fame,Gong,Father Valentine Spinoza,Four Fighters,Dropkick Murphys,Declan ' Deko ' Kennedy,The Defiled,Dan Nash,White Denim,Whitey Johnson,Will and the People,Will Varley,The Waterboys,West Weston ' s Bluesonics,We Are The In Crowd,DMA ' s,The Felice Brothers,Ella Eyre,Gregory Porter,Holland Marie,Into It . Over It .,Helen Gillet,Casual Baby,C Duncan,Chris Botti,The Counterfeit Stones,Jason Isbell,Rod Stewart,James Blunt,Stevie Nimmo,The Real Thing,Justin Currie,Fat White Family,Biscuit Tin Sound System,Ben Waters,The Icicle Works,Lawson,Jonny Reid,Kazabian,Kent DuChaine,Nick Mulvey,Rat Boy,Rebecca Ferguson,Reckless Love,Placebo,Robyn Hitchcock,Ron Pope,Rob Kingsley,Todd Sansom,The Twilight Sad,The Undertones,Syd Arthur,The Soul Experience,Smoking Time Jazz Club,Swans,Steeleye Span,U2 - 2,Tigercub,Tankus The Henge,Sam Smith,Ryley Walker,She Makes War,Rachel Sermanni,Recreations .,Red Hot Chilli Pipers,Pearl Jam UK,Orange Goblin,Martin Carthy,Mayday Parade,Money For Nothing,Mike Dignam,Jesse Morrow,Beach Baby,Blair ' s West,The Unthanks,Hannah Wants,Jonathan Pie,Slade UK,Alkaline Trio,Ahab,Courtney Pine,The Crazy World Of Arthur Brown,Blitz Kids,Hypnotic Brass Ensemble,Hali Hicks,Green Haze,The Hard Way,Guns or Roses,Future Islands,Ghostpoet,Voodoo Room,Young Guns,YAK,Woolley & Archer,Hats Off To Led Zeppelin,Ian Hunter,Hot Sister,Jimmy Coup,The Dualers,Easy Star All - Stars,Bootleg Blondie,Bury Tomorrow,Contraband Breaks Ensemble,All Tvvins,Henning Wehn,Lindisfarne,New Found Glory,Beyond The Barricade,Asking Alexandria,John Newman,Manchester Orchestra,Luk Nichols,Mike Siler,Oysterband,Scottish Ensemble,Sam Bailey,Too Rex,Turbowolf,Thomas Trotter,Tom Hingley,The Solent City Jazzmen,Soil,Cattle & Cane,The Rat Pack Vegas Spectacular Show,Ped & Joe,Ozric Tentacles,Novana,Midge Ure,Miles Kane,The Lumineers,London Concert Orchestra,The Magic Band,Leddra Chapman,Lord Huron,Julian Berry,Kid Ink,Keith James,Karma to Burn,Killer Queen,King Creosote,Lake Street Dive,Atomic Blondie,Ash,Purson,St . Paul and the Broken Bones,Lisbee Stainton,Gengahr,Robbie Williams,Acid Mothers Temple,Dakota Jim ' s Old Time Jazz Orchestra,Curtis Stigers,Charlie Landsborough,The Burning Hell,Bo Ningen,Bullet For My Valentine,Blue,Eddie and The Hot Rods,Doreen Doreen,The English Beat,FM,Fascinating Aida,Jack Whitehall,Hue and Cry,Jaguar Skills,Hackney Colliery Band,Hank Wangford,Glass Caves,White Lies,Walking On Cars,The Verdict,The Vinyl Vendettas,Emeli Sandé,The Weeks,Halestorm,Ian McNabb,Jason Donovan,Janoskians,First Aid Kit,Flight Brigade,Blake,CC Smugglers,Dan Croll,Dark Star Orchestra,The Correspondents,Warpaint,Laura Mvula,Daughter,Hopsin,BANKS,Andy Jordan,Al Stewart,Alex Haynes & the Fever,Architects,Ashestoangels,Barbara Dickson,The Justin Beech Band,The Milk,Motionless In White,Maroon 5,Nuala,New Politics,Rollo Markee and The Tailshakers,Ronan Keating,Seafret,Soulfly,Sinnerboy,SixOneSeven,Stone Foundation,Tracer,Ugly Kid Joe,To Kill A King,The Toasters,Stealing Sheep,The Story So Far,Tall Ships,Skaters,RM Hubbert,Ruby Turner,Rhodes,Robert Cray,O ' Hooley & Tidow,The Ordinary Boys,Orchestra Of The Age of Enlightenment,Marty Wilde,Metronomy,Justin Timberlake,The Beards,Laura Marling,Madina Lake,Dean Friedman,James Yorkston,The LaFontaines,Joe Bonamassa,Russell Howard,Baby Strange,Pictish Trail,Scouting For Girls,Chuck Prophet,65daysofstatic,The Black Keys,The Gaslight Anthem,Eleanor McEvoy,Emily Barker,Emma Stevens,The Derby Band,David Duffy,Jean Genie,Jimmy C and the Blues Dragons,Jamie T,Jane McDonald,Gerry McAvoy ' s Band of Friends,Walk Off The Earth,Vice Squad,DJ Yoda,Your Demise,Lady Gaga,Ludovico Einaudi,Union J,Umphrey ' s McGee,Up 4 The Downstroke,The High Kings,Janet Devlin,Idiom,Hooton Tennis Club,Dick Gaughan,David Essex,Exit Calm,Finley Quaye,Chase & Status,Chicago Blues Brothers,Dakota Jim & His Family,Kate Tempest,Craig McGown,Shalamar,Ghost,Rag ' n ' Bone Man,Jesca Hoop,Andy Forest,Big Deal,Angel Olsen,Julian Cope,Kasabian,Karnataka,Lady Winwoods Maggot,Kings of Lyon,Lissie,The Leisure Society,Lee Lee,Manchester Camerata,Martin Barre,DJ Martyn The Hat,Miley Cyrus,Nadine Shah,Mystery Jets,Moon Duo,The Nightingales,Phillip Henry & Hannah Martin,Ryan Faraday,The Script,Sarah Montgomery,The Southmartins,Soul Legends,Stone Silo,Steve Mason,Texas,Trans - Siberian Orchestra,T ' Pau,Touche Amore,Tom Baxter,Treetop Flyers,Stackridge,St . Vincent,Sigma,The Pretty Things,Paolo Nutini,The Mods,Netsky,Marc O ' Reilly,McFly,The Moons,Larkin Poe,Lisbon,Local Natives,Judie Tzuke,Johnny V,Annie Mac,Andy McKee,Barb Jungr,B . Dolan,Animals As Leaders,Anais Mitchell,Admiral Fallow,Richard Herring,Jagwar Ma,Devil Sold His Soul,You Win Again : The Story of The Bee Gees,Declan McKenna,Jonny Parry,Embrace,The Japanese House,Idles,CoCo and the Butterfields,The Coal Porters,Cabbage,The Bluetones,Fort Hope,Dave Easley,Dom Pipkin and the IKO ' s,Diamond Head,East India Youth,Inspiral Carpets,Hat Fitz & Cara Robinson,G - Eazy,Gorgon City,Grimethorpe Colliery Band,Gregory Agid,Gary Barlow,Gilmore & Roberts,The Growlers,Half Man Half Biscuit,Hawthorne Heights,Jackson Live,Dinosaur Pile - Up,Devin Townsend,Dominic Kirwan,Detroit Soul,Deap Vally,Erin Demastes,Ethan Johns,Eliza Carthy,Caman,Danny Bryant,Clay,Wilkinson,Bry,Sean Lock,Elaine Paige,Sam Brookes,The Pretty Reckless,Two Door Cinema Club,Afro Celt Sound System,Alien Ant Farm,Andy C,The Amity Affliction,Anberlin,Billy Bragg,Beth Orton,Josienne Clarke & Ben Walker,King Pleasure & The Biscuit Boys,Johnny Flynn & The Sussex Wit,Madison,Manic Street Preachers,Matt Schofield,Blaenavon,Megson,Michael Bublé,Michael Schenker,Matt Cardle,MØ,Otis Gibbs,Oye Santana,Professor Green,Railroad Earth,Sabaton,Roo Panes,Richard Thompson,Sub Focus,This Wild Life,Tommy Emmanuel,Tim Burgess,Wire,Miles Jupp,King No - One,Yes Sir Boss,The Stones,Smoove and Turrell,Ryan McGarvey,Sharon Shannon,Shakatak,Richard Digance,RAF,Pixies,OPM,Only Men Aloud,The Neighbourhood,Nigel Price,Motorhead,The Moody Blues,My Darling Clementine,Mac DeMarco,Man Made,Liane Carroll,Lianne La Havas,Lindi Ortega,Kiran Leonard,The Joy Formidable,Beth Hart,As It Is,The Ataris,ALXNDR,Alex Roberts,Youth Club,Matt Corby,RavenEye,Taking Back Sunday,Basement,Loyle Carner,Dan Le Sac vs Scroobius Pip,Coldplace,Federal Charm,Fraser Erik,Folkin Shenanigans,ELO Again,Editors,Hidden Charms,Heather Peace,Grandmaster Flash,Girl Band,Gretchen Peters,Gogol Bordello,The Franklys,Hollywood Ending,Inheaven,Hot Club of Cowtown,Empire,Dolomite Minor,Dr . Dog,Dave Hause,Dingus Khan,Desperado,Feed The Rhino,Fell Out Boy,Father John Misty,Clannad,Conan,DARA,David Rodigan,Bob Mould,Black Honey,Breed 77,John Bishop,Three Trapped Tigers,Boomtown Rats,W . A . S . P .,Jon Richardson,Boxed In,Chris Ramsey,The Besnard Lakes,Against The Current,Allah - Las,Alasdair Roberts,Black Dyke Band,Jesse Malin,Joe Longthorne,Kevin Bloody Wilson,Kick up the 80 ' s,Laetitia Sadier,Mutual Benefit,The Monochrome Set,Merchandise,Max Jury,Nizlopi,Of Mice & Men,Panic ! At The Disco,The Red 8,Sam Lee,Sharon Van Etten,RX Bandits,Skid Row,Simply Red,Subhumans,Sunset Cafe Stompers,TesseracT,Thank You for the Music,Usher,Zoe Schwarz,Wiley,The Untouchables,The Voyeurs,Young Fathers,Tom Paxton,The Summer Set,Telegram,Straighten Out,DJ Stuart Gilchrist,Smoke Fairies,Roy Ayers,Rolo Tomassi,Rue Royale,Sharon Jones and The Dap - Kings,Seu Jorge,Sandi Thom,Ray Considine,Peter and the Test Tube Babies,Natalie McCool,The Nimmo Brothers,Nordic Giants,Needtobreathe,Neutral Milk Hotel,Maz O ' Connor,Michael Chapman,The Midnight Beast,Mr . B The Gentleman Rhymer,Mumford and Sons,Nerina Pallot,Lisa Kindred,Los Campesinos !,Land Of The Giants,Julia Fordham,Beyoncé,Airbourne,Happyness,Modern Baseball,Reginald D Hunter,4th Street,Hi - on Maiden,Interpol,Daniel O ' Donnell,Stormzy,Sophie Ellis Bextor,The Jesus & Mary Chain,Buckcherry,Crocodiles,Erasure,The Elvis Years,Howard Jones,Heaven ' s Basement,Gareth Malone,Graham Bonnet Band,The Graveltones,The Ghost Inside,Har Mar Superstar,Howler,Hurray For The Riff Raff,Jeremy Loops,The Family Rain,Funeral Suits,Frank Hamilton,Deborah Bonham,Dire Streets,Drowners,Curved Air,The Credit Crunchers,Counterflow,The Creepshow,Charli XCX,DJ Bobby Cooper,The Bryan Adams Experience,Black Grape,Primal Scream,William Control,Imperial Leisure,Lee Nelson,Ben Haenow,Menace Beach,Arctic Monkeys,Attention Thieves,Andy T & Nick Nixon,King David ' s Trio Royale,Kobra & The Lotus,Lola Colt,Louis Berry,Machine Head,National Youth Jazz Orchestra,Motörheadache,Miles Hunt,Misfits,Matt Berry,Mary Black,Marina and the Diamonds,Navi,Nickelback,Oasis UK,Oli Brown,Parquet Courts,Poliça,Real Friends,Real Estate,The Riptide Movement,Roy Wood,Savages,Skream,Sivu,Steve Gibbons,Steve Carroll,Stillmarillion,Tellison,Tinariwen,DJ Tom Smith,Trevor Nelson,Watsky,The Undercover Hippy,Ariana Grande,Simon Amstell,Verses,Who ' s Bad,Tony McHugh,Thomas Truax,Stuart Blagdon Quartet,Sonata Arctica,Straight Lines,The Smiths Indeed,Splashh,South Coast Soul Revue,The Rutles,Runrig,Ricky Warwick,Savannah Jack,The Sensational David Bowie Band,Shovels & Rope,Rebelution,The Red Lemons,Pentatonix,The Primitives,Polly and the Billets Doux,The Osmonds,Nick Oliveri,DJ Muppet,Lotte Mullan,The Maccabees,Joan As Police Woman,Attila,August Burns Red,Biffy Clyro,Beaty Heart,Billy Cobham",
+      "activated": true
+    },
+    {
+      "name": "ArtistType",
+      "mode": true,
+      "words": "Band,Solo Artist,Singer / Songwriter,Orchestra,DJ / Producer,Rapper / MC,Tribute Act,Covers Band,Boy / Girl Band,Choir,Musician / Composer,Duo,Trio,Quartet,Quintet,Sextet,Septet,Octet,Ensemble,Collective,Supergroup,Vocalist",
+      "activated": true
+    },
+    {
+      "name": "Genre",
+      "mode": true,
+      "words": "Pop,Folk,Country,Blues,Jazz,Ska,Reggae,World,Electronic,Classical,Instrumental,Punk,Hip Hop,RnB,Rap,Rock,Indie,Soul,Metal",
+      "activated": true
+    },
+    {
+      "name": "Location",
+      "mode": true,
+      "words": "London,Birmingham,Glasgow,Leeds,Bristol,Liverpool,Manchester,Sheffield,Edinburgh,Cardiff,Leicester,Stoke - on - Trent,Bradford,Coventry,Nottingham,Kingston - upon - Hull,Belfast,Newcastle - upon - Tyne,Sunderland,Brighton,Derby,Plymouth,Wolverhampton,Southamton,Swansea,Salford,Portsmouth,Milton Keynes,Aberdeen,Reading,Northampton,Luton,Swindon,Warrington,Dudley,York,Bolton,Stockton - on - Tees,Preston,Bournemouth,Norwich,Middlesbrough,Peterborough,Southend - on - Sea,Walsall,Colchester,Mansfield,Telford,Ipswich,Huddersfield,Dundee,Oxford,Doncaster,Chelmsford,Cambridge,Maidstone,Slough,Poole,Blackburn,Chesterfield,Blackpool,Newport,Birkenhead,St Alban ’ s,Hastings,Bedford,Gloucester,West Bromwich,Worcester,Sale,Nuneaton,Watford,Exeter,Solihull,Chester,High Wycombe,Gateshead,Southport,Rotherham,Cheltenham,Hove,Eastbourne,Worthing,Londonderry,Rochdale,Basingstoke,Basildon,Crawley,Falkirk,Stockport,Darlington,Woking,Lincoln,Gillingham,Wigan,Oldham,St Helen ’ s,Tamworth,Carlisle,Dartford,Wakefield,Rayleigh,Hemel Hempstead,Bath,Weymouth,Hartlepool,Barnsley,Stevenage,Grimsby,Halifax,Redditch,Weston - super - Mare,Harlow,Burnley,Scunthorpe,Eastleigh,Bracknell,Bury,Guildford,Paisley,Chatham,South Shields,Newcastle - under - Lyme,East Kilbride,Harrogate,Lisburn,Burton - upon - Trent,Aylesbury,Crewe,Shrewsbury,Gosport,Lowestoft,Rugby,Stafford,Rossendale,Cannock,Tynemouth,Washington,Grays,Walton - on - Thames,Craigavon,Farnborough,Paignton,Waterlooville,Runcorn,Bognor Regis,Maidenhead,Stourbridge,Rochester,Dewsbury,Scarborough,Newtownabbey,Wrexham,Widnes,Margate,Ellesmere Port,Taunton,Hereford,Wallasey,Bangor,Loughborough,Halesowen,Royal Tunbridge Wells,Bebington,Aldershot,Macclesfield,Livingston,Kettering,Royal Leamington Spa,Littlehampton,Kidderminster,Gravesend,Corby,Canterbury,Barry,Christchurch,Keighley,Hamilton,Brentwood,Ewell,Beeston,Bootle,Esher,Kingswinford,Neath,Clacton - on - Sea,Crosby,Kirkcaldy,Dunfermline,Carlton,Wellingborough,Torquay,Sittingbourne,Smethwick,Shoreham - by - Sea,Welwyn Garden City,Inverness,Lancaster,Horsham,Ayr,Perth,Cwmbrân,Banbury,Llanelli,Kilmarnock,King ’ s Lynn,Barrow - in - Furness,Sutton - in - Ashfield,Cheshunt,West Bridgford,Northwich,Ashton - under - Lyne,Winchester,Havant,Salisbury,Greenock,Coatbridge,Wallsend,Merthyr Tydfil,Jarrow,Whiteley,Middleton,Lytham St Anne ’ s,Kirkby,Wokingham,Bexhill - on - Sea,Hoddesdon,Fareham,Grantham,Worksop,Andover,Dover,Braintree,Caerphilly,Boston,Bridgwater,Bury St Edmund ’ s,Ramsgate,Irvine,Cleethorpes,Trowbridge,Swadlincote,Glenrothes,Castleford,Leyland,Newbury,Eccles,Fleet,Great Yarmouth,Tonbridge,Ilkeston,Herne Bay,Abingdon - on - Thames,Canvey Island,Camberley,Bishop ’ s Stortford,Long Eaton,Hatfield,Leighton Buzzard,Blyth,Port Talbot,Chester - le - Street,Airdrie,Newark - on - Trent,Redcar,Whitley Bay,Chorley,Wilmslow,Borehamwood,Accrington,Chadderton,Romiley,Coalville,Redhill,Skelmersdale,Exmouth,Billericay,Hitchin,Tyldesley,Hyde,Haywards Heath,St Helier,Wickford,Bromsgrove,Brighouse,Letchworth Garden City,Huyton,Chippenham,Strood,Glossop,Dumfries,Lichfield,Stroud,Bicester,Pudsey,Hucknall,Whitstable,Motherwell,Prestwich,Barnstaple,Spalding,Wisbech,Epsom,Brierley Hill,Rutherglen,Warwick,Pitsea,Loughton,Stanford - le - Hope,Burgess Hill,Beverley,Wishaw,Colwyn Bay,St Neot ’ s,Harpenden,George Town,Dunstable,Yate,Radcliffe,Newry,Weybridge,Bilston,Ballymena,Gibraltar,Pontefract,Burntwood,Witney,East Grinstead,Carrickfergus,Clydebank,Totton,Chichester,Kendal,Newtownards,Heywood,Darwen,Ashford,Ashington,Douglas,Stratford - upon - Avon,Bradley Stoke,Cramlington,Penarth,Melton Mowbray,Haverhill,Cambuslang,Farnworth,Kirkby - in - Ashfield,Didcot,Hertford,Stalybridge,Frome,Ryde,Thatcham,Staines - upon - Thames,Heanor,Farnham,Newton Abbot,Swinton,Fleetwood,Witham,Bushey,Rhyl,Bishop Auckland,Skegness,Consett,Gorleston - on - Sea,Coleraine,Saddleworth,Droylsden,Westhoughton,Ormskirk,Blackwood,Whitehaven,Rickmansworth,Oldbury,Huntingdon,Arbroath,Daventry,St Austell,Portishead,Broadstairs,Lurgan,Droitwich Spa,Belper,Wombwell,Formby,Burnham - on - Sea,Elgin,Rawtenstall,Coseley,Amersham,Market Harborough,Alfreton,Horley,Godalming,Falmouth,Musselburgh,Potters ’ Bar,Bingley,Seaham,Chesham,Sudbury,Reigate,Buxton,Workington,Retford,Antrim,Maldon,Omagh,Ossett,Walkden,March,Clevedon,Stanley,Whitefield,Dukinfield,Gainsborough,Goole,Dereham,Berkhamsted,Crowborough,Sandhurst,Camborne,Wellington,Newmarket,Bathgate,Truro,Penzance,Newquay,Dumbarton,New Milton,Irlam,Portslade - by - Sea,Redruth,Tewkesbury,Harwich,Stamford,Kirkintilloch,Leek,Tiverton,Hazel Grove,Eastwood,Melksham,Kempston,Adwick - le - Street,Hebburn,Ely,Molesey,Dorchester,Ware,Minster - on - Sea,Waltham Abbey,Oswestry,Lancing,Peterhead,Rawmarsh,Prestatyn,Johnstone,Alton,Ebbw Vale,Aberystwyth,Devizes,Sunbury - on - Thames,Bideford,Spennymoor,Hoyland,Selby,Poulton - le - Fylde,Grangemouth,Sleaford,Lewes,Blantyre,Nantwich,Dorking,Romsey,Guisborough,St Andrew ’ s,Northallerton,Connah ’ s Quay,Brixham,Haydock,St Peter Port,Louth,St Ives,Ripon,Cirencester,Swanley,Nailsea,Banbridge,Haslingden,Penicuik,Carmarthen,Tadley,Royston,Carterton,Keynsham,Larkhall,Saltash,Knaresborough,Port Glasgow,Llandudno,Broxburn,Lymington,Uckfield,Saffron Walden,Cottingham,Wimborne Minster,Teignmouth,Newport Pagnell,Hythe,Neston,Kidlington,Galashiels,Petersfield,Matlock,Flint,Prestwick,Bo ’ ness,Tredegar,Marlow,Ilkley,Clitheroe,Armagh,Frampton Cotterell,Porth,Skipton,Haverfordwest,Morpeth,Dungannon,Dunscroft,Hawick,Helensburgh,West Cowes,Forfar,Dundonald,Ringwood,Strabane,Beccles,Houghton - le - Spring,Beaconsfield,Enniskillen,Chertsey,Blackfield,Standish,Whiston,Milford Haven,Oxted,Corsham,Abergavenny,Verwood,Alsager,Bacup,Pensby,Berwick - upon - Tweed,Whitby,Fraserburgh,Uttoxeter,Chard,Alexandria,Milngavie,Saltdean,Street,Isle of Portland,Inverurie,Bromborough,Tividale,Mablethorpe,North Walsham,Ashby - de - la - Zouch,Chepstow,Bridgnorth,Walton - on - the - Naze,Cookstown,Montrose,Sheerness,Kirkham,Halstead,Sandown,Ivybridge,Bolsover,Bargoed,Stoke Gifford,Henley - on - Thames,Stonehaven,Holyhead,Cowdenbeath,Carnoustie,Newtown,Knowsley,Thame,Dawlish,Helston,Royal Wootton Bassett,Wetherby,Prudhoe,Ilfracombe,Bodden Town,Westhill,Leominster,Oakham,Hoylake,Shirebrook,Downham Market,Immingham,Downpatrick,Banstead,Gourock,Filton,Ross - on - Wye,Selsey,Wells,Whitburn,Patchway,Swanage,Kingsteignton,Shepton Mallet,South Elmsall,Chigwell,Chatteris,Epping,West Bay,Baldock,Ellon,Ystradgynlais,Ascot,Amesbury,Monmouth,Waltham Cross,Mold,Thirsk,Lutterworth,Worth,Dalgety Bay,Ollerton,Diss,Penistone,Sawbridgeworth,Woodingdean,Pembroke Dock,Polesworth,Newbridge,Maryport,Caernarfon,Cupar,Onchan,Abergele,Yaxley,Tidworth,Soham,Bradford - on - Avon,Cockermouth,Larbert,Worsley,Shanklin,Blairgowrie,Hockley,Magherafelt,Ledbury,Dunblane,Southwater,Uphall,Oban,South Kirkby,Denbigh,Dunbar,Glastonbury,Hornsea,Llantwit Major,Watton,Richmond,Peebles,Brecon,Princes ’ Risborough,Hayle,Alnwick,Marlborough,Totnes,Iver Heath,Rhymney,Cromer,Thurso,Ramsey,Highworth,Crediton,Freshwater,Heswall,Oaklands,Okehampton,Warrenpoint,Launceston,Pembroke,Longridge,Dinas Powys,Brechin,Murton,Wraysbury,Crieff,Stonehouse,Shaftesbury,Girvan,Portlethen,Wick,Wendover,Lochgelly,Faringdon,Kirkwall,East Cowes,Bolton - le - Sands,Lerwick,Alcester,Burnham - on - Crouch,Lightwater,Brigg,Bolton - upon - Dearne,Stansted Mountfitchet,Sherburn - in - Elmet,Portrush,North Berwick,Kilkeel,Carryduff,Godmanchester,Tadcaster,Castle Donington,Coleshill,Road Town,Malmesbury,Stainforth,Bishop ’ s Waltham,Burntisland,Ventnor,Studley,Withernsea,Kingsbridge,Chipping Ongar,Kirriemuir,Waltham,Saltburn - by - the - Sea,Welshpool,Fort William,Wigton,Selkirk,Oundle,Chipping Norton,Stornoway,Great Torrington,Kelso,Dromore,Taff ’ s Well,Coalisland,Hemsby,Hethersett,Greenisland,Wareham,Chinnor,Wincanton,West Clandon,Llandrindod Wells,Northwood,Cheddar,Appley Bridge,Church,Shevington,Looe,Cookham,Hungerford,Peel,Bude,Dartmouth,Menai Bridge,Datchet,Winterton,Kinross,Llangefni,Campbeltown,Blaina,Market Rasen,Rye,Keith,Bovey Tracey,Coggeshall,Lyme Regis,Frinton - on - Sea,High Lane,Sedgefield,Irchester,Chipping Sodbury,Glyn - Neath,Send,Bramley,New Tredegar,Cardigan,Castle Douglas,Lennoxtown,Hextable,Banff,Invergordon,Saltford,Stokenchurch,Jedburgh,Chudleigh,Macduff,Keele,Lydd,Maghera,Conwy,Whitehead,Marston Moretaine,Tenbury Wells,Almondsbury,Stoney Stanton,Middleton St George,Eye,Parkgate,Cockburn Town,Bembridge,Ellesmere,St Colomb Major,Moira,Settle,Tylorstown,Pewsey,Barnston,Boroughbridge,Wilton,Brockenhurst,Carisbrooke,Eyemouth,Sedbury,Port Erin,Stamford Bridge,Welwyn,Messingham,Spilsby,Fishguard,Queenborough,Little Neston,Takeley,St Asaph,Kirkcudbright,Ashburton,Somerton,Ahoghill,Buckfastleigh,Hatfield Peverel,Fairford,Castle Cary,Walton,Dordon,Amlwch,West Calder,Newton,Gayton,Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch,Castletown,Langford,Beaminster,Langport,Minster,Bruton,Porthmadog,Castlewellan,Minchinhampton,Over,Charlbury,Builth Wells,Kidwelly,Stoke Mandeville,Saundersfoot,Duns,Cleobury Mortimer,Mere,Fairfield Park,Tuxford,Holsworthy,Kington,Highclere,Tarporley,Brierley,Godstone,Rostrevor,Higher Folds,Yarnton,Caldercruix,Presteigne,Ironbridge,Watlington,Aspatria,Ellington,Valley,Larkhill,Kingston Bagpuize,Lyndhurst,Castledawson,Watton - at - Stone,Collingham,Barmouth,Coltishall,Oakley,Mevagissey,Bradpole,Coupar Angus,Hambleton,Benllech,Langholm,Milnthorpe,Mossblown,Leyburn,Severn Beach,Tisbury,Wells - next - the - Sea,Eton,Duxford,Sandford,Odiham,Wickham,Halton,Chipping Campden,Eton Wick,Hutton,St Clear ’ s,Elstree,Port St Mary,Comrie,South Nutfield,Wrotham,Annalong,Salcombe,Newcastle Emlyn,Moneymore,Ashwell,Lynemouth,Kirkby Lonsdale,Hale,Rhayader,Draperstown,East Bridgford,Cold Ash,Shaldon,Althorpe,St George,West Hill,Goodwick,Hatfield Heath,Laxey,Thornhill,Burton,Ness,Hockley Heath,Calderbank,Crossmaglen,Ainsworth,Trimsaran,Hutton Rudby,Stock,Kilrea,Ullapool,Trearddur,Whittlesford,Kirkby Stephen,Crockenhill,Hutton Cranswick,North Side,Markham,Steventon,Ryhall,Godshill,East End,Balcombe,Aberaeron,Burnhope,Dobwalls,Twyford,St David ’ s,Dorchester - on - Thames,Wingrave,Kirkby - le - Soken,Horspath,Beaumaris,Box Hill,Fivemiletown,Potten End,Corfe Castle,Barford,Garsington,Castlerock,Garvagh,southampton,durham,croydon,folkestone,windsor,sutton,romford,stirling,yeovil,bromley",
+      "activated": true
+    },
+    {
+      "name": "Venue",
+      "mode": true,
+      "words": "Cavern Club,The Live Lounge,The Deaf Institute,O2 ABC Glasgow,O2 Academy Islington,Ronnie Scott ' s,Peadar O ' Donnells,Cavern Pub,The Green Door Store,Laverys Bar,The Garage,The Borderline,Brudenell Social Club,Rescue Rooms,O2 Academy Newcastle,Clwb Ifor Bach,Ain ' t Nothin But . . . Blues Bar,The Haunt,O2 Academy Birmingham,Sneaky Pete ' s,Rock City,Thekla,The Cluny,The Garage London,The Fleece,Jazz Cafe London,The Waterfront,The Talking Heads,The Robin 2,The Blues Kitchen Camden,O2 Institute,The Musician,Hare & Hounds,Espionage Aberdeen,The Bodega,Coalition,Cargo,Sticky Mike ' s Frog Bar,The Underworld,The Stables,Moles,King Tut ' s Wah Wah Hut,Royal Albert Hall,The Lexington,The Railway,The Hope & Ruin,O2 Academy Oxford,Concorde 2,The Louisiana,Green Note,The Sage,Colston Hall,Chaplins Wine Bar / The Cellar Bar,Sound Control,Proud Camden,Leadmill,The Joiners,The Brunswick,O2 Ritz,O2 Academy Bristol,Exchange,Band on the Wall,Maggie Mays,Corporation,The Cockpit,O2 Academy Liverpool,Heaven,The Old Queens Head,Oran Mor,The Maze,Robinson ' s Bars,The Electric Circus,Hoxton Square Bar & Kitchen,KOKO,The Half Moon,O2 Academy Leeds,The Globe,O2 Shepherds Bush Empire,Plug,XOYO,The Ruby Lounge,The Basement,Espionage Edinburgh,Esquires,The Flowerpot,Buffalo Bar,Komedia Brighton,The Classic Grand,The Horn,Oslo,Sound Circus,Wolves Civic,McHughs Bar,Symphony Hall,Troy Bar,The Vic,Night and Day Cafe,The Brickmakers,The Brook,O2 Academy Sheffield,Orange Rooms,Gorilla,Oceana,The Forum,The Boileroom,The Prince Albert,Jagz Ascot,The Blues Kitchen Shoreditch,Weir Lounge,Pryzm,The Portland Arms,The Cathouse,The Craufurd Arms,Marrs Bar,Cambridge Junction,The 100 Club,Passing Clouds,Wedgewood Rooms,The Greystones,Fibbers,Walkabout,Dry Bar,Volks,Jamboree,The Vortex,Broadcast,The Hairy Dog,The RoadHouse,Scala,Liquid & Envy,The Key Club,Sebright Arms,The Jam House,The Duchess,Sin City,The Liquid Room,The Source Bar,The Sugarmill,Hifi Club,Pandora ' s Box,Roundhouse,Electric Ballroom,Norwich Arts Centre,O2 Forum Kentish Town,Manchester Academy 3,The Castle Hotel,The Crofters Rights,O2 Academy Leicester,Timepiece Nightclub,Bedroom Bar,The Trades Club,Dingwalls,The Assembly,KU Bar,Sub 89,Mr Kyps,The O2,Soup Kitchen,Telford ’ s Warehouse,The Hideaway,O2 Academy Brixton,Komedia Bath,Nice N Sleazy,Alleycat,Revenge,Le QuecumBar,Exeter Phoenix,The Full Moon,The Bull ' s Head,The Donkey,Windmill Brixton,The Bridgewater Hall,The Bullingdon,Bootleggers Bar,Sixty Million Postcards,Kasbah,Dalton Rooms,The Cellar,The Anvil,90 Degrees,333 Mother Bar,Boisdale Canary Wharf,Cavern,Q Club,The New Adelphi Club,Union Chapel,Belgrave Music Hall,The Canteen,Hy Brasil Music Club,Mr Wolf ' s,Fiddlers Elbow,East Village Arts Club,Barbican,The Shipping Forecast,The Edge,The Social,Old Blue Last,The Golden Lion,The Welly,Birthdays,Voodoo,Cliffs Pavilion,Digital,The Monarch,Whites Tavern,The Wardrobe,The Moon Club,Glasgow Royal Concert Hall,The Bell Inn,The Bedford,The Dublin Castle,Bush Hall,The Soundhouse,The Middlesbrough Empire,Leaf Cafe,Popworld,Stereo,The Lemon Tree,The Old Fire Station,The Lord Nelson,Lola Lo,The Queen ' s Hall,Royal Concert Hall,Eventim Apollo,Hootananny,Roadhouse,The Ropemakers,Manchester Academy 2,Liverpool Philharmonic Hall,St David ' s Hall,Pryzm Bristol,Boujis,Johnny Foxes,93 Feet East,The Shacklewell Arms,The Finsbury,Colchester Arts Centre,Amersham Arms,Gatecrasher Birmingham,Manchester Academy 1,Usher Hall,Sugar Cube Club,Empire Music Hall,Manchester Club Academy,The Jericho Tavern,Royal Northern College of Music,The Met,O2 Apollo,The Cellars at Eastney,Air & Breathe,Manchester Arena,Limelight 1,Central Station,The Nest,Surya,The Voodoo Rooms,Chapel Arts Centre,The Black Heart,Corn Exchange Cambridge,The Rainbow,The Black Box,Sheffield City Hall,Brighton Dome,The Jacobs Ladder Inn,Bannerman ' s,The Clapham Grand,Town Hall,The B Bar,Brixton Jamm,Think Tank ?,Finnegan ' s Wake,Egg,Trafik,The Cookie,The Picturedrome,Kings Place,Roadtrip & The Workshop,The Winchester Pub,O2 Academy Glasgow,The Blind Tiger Club,Latest Music Bar,Ironworks,The Victoria Inn,TRiPP,Star and Garter,Village Underground,Islington Assembly Hall,Ace Hotel,Nambucca,Leeds University Union,Studio 2,Belushi ' s Brighton,The Boogaloo,Fruit,Farnham Maltings,Smokin ' Aces,The Magic Garden,The Lucky Pig Fitzrovia,Backstage at the Green Hotel,Gwdihw Cafe Bar,Electric Brixton,De Montfort Hall,Sakura,Slim Jim ' s Liquor Store,The Hop,The Pavilion,The Arches,606 Club,Old Brown Jug,Audio,The Tunnels,Music Hall,Zen Sai,Kelly ' s Bar,DreadnoughtRock,The Brickyard,The Ferret,Bar So,The Flapper,12 Bar Club,The Live Rooms,The Kazimier,Limelight 2,The Tooting Tram & Social,Royal Festival Hall,The Square,Eden Court,Nation of Shopkeepers,Independent,The Sunflower Lounge,Orleans,Apples & Pears,Queen Margaret Union,Y Plas,The SSE Hydro,The Good Ship,Firebug,The Big Chill Bar,The Edge of The Wedge,indigo at The O2,Cabaret Voltaire,Warehouse23,Portsmouth Guildhall,Che Bar,Brewery Arts Centre,Bonsai Lounge,The Roadmender,Dirty Blonde,Gullivers,Home,The Errigle Inn,The Pod,The Tin Music and Arts,The Keller,The Apex,Tavistock Wharf,The Harley,UEA LCR,The Tower of Song Bar,Motion,The Warehouse,Ministry of Sound,53 Degrees,Bed,Mbargo,Doctor Brightons,The Puzzle Hall Inn,Motorpoint Arena Cardiff,The Forum Music Centre,The Hobbit,Princess Pavilion,Bournemouth International Centre,The Fishpond,O2 Academy Bournemouth,The Art School,Gellions,The George IV,The Asylum,Moses Gate,The Barrowland Ballroom,Albert Hall,The Glee Club Birmingham,229,Qudos,Tivoli Venue,Concrete,The Purple Turtle,The Hippodrome Kingston,Whistlebinkies,Shadow Lounge,Newcastle City Hall,Joshua Brooks,The Pavilion Theatre,Careys,Genting Arena,Luna Lounge,The Sands Venue,The Leopard,Gloucester Guildhall,Trapeze,Crazy Coqs,The Slaughtered Lamb,West End Centre,The Old Ticket Hall,Thomas Tripp,Flat 0 / 1,The Underbelly,The Brighton Centre,Pop,Ulster Hall,South Hill Park Arts Centre,Club Mono,Wigmore Hall,The Venue,The Head of Steam,Lomax,Metro Radio Arena,Royal & Derngate,Stealth,Queen Elizabeth Hall,G Live,The Krazyhouse,Echo Arena,The Gallimaufry,PizzaExpress Maidstone,York Barbican,The Music Box,The Troubadour,Blakey ' s Cafe Bar,The Function Rooms,No 1 Shakespeare Street,Belfast Waterfront,The Bull and Gate,The Robert Gillow,Plymouth Pavilions,EPIC,The Grand,Chinnerys,Warwick Arts Centre,Rough Trade East,Cheltenham Town Hall,Vault,Le Pub,The White Lion,Salisbury Arts Centre,The Islington,The Unicorn,Engine Rooms,The Alban Arena,Bar Rumba,Shaka Zulu,Huntingdon Hall,Under the Bridge,Cheese & Grain,Water Rats,The Chichester Inn,Fairfield Halls,St Pancras Old Church,Fuel,Embassy Theatre,The Engine Shed,The Queens Hall,Zanzibar,Spanky Van Dykes,Ivory Blacks,Bedford Corn Exchange,Open,The Kiln Farm Pub,The Deco,The Leas Cliff Hall,Kitchen Garden Cafe,London Palladium,Marisco,Hobos,Turner Sims,The Eagle Tavern,City Hall Salisbury,Barclaycard Arena,Vision Nightclub,Berties,Motorpoint Arena Nottingham,The Lowry,Cecil Sharp House,First Direct Arena,Palladium Club,The Thunderbolt,City Varieties Music Hall,The Poet & Castle,Bristol Bierkeller,Brooklyn Bowl,The Shed,Salt,Boston Music Rooms,The SSE Arena,Bar 3one,Mono Bar,Club Rosso,Bar Zuka,The Speakeasy,The Greyhound,Watford Colosseum,Funky Fish,King Arthur ' s Hall,Vibe Bar,Whittles,The Tube,The Hexagon,Cameo,Cafe OTO,G Bar,Bussey Building,Corsica Studios,Mandela Hall,The Mill,Finns,The Victoria,Loughborough SU,The Trinity Centre,Tivoli Theatre,The Plug & The Tub,The Box,The Bicycle Shop,The Marble Factory,Sink,The Good Intent,Alexander ' s Jazz Theatre,Ipswich Regent,Leeds Beckett SU,Arlington Arts Centre,The Bridge,Riverside,Spotted Dog,Thursdays,The White Rabbit,The Tap and Spile,The Anchor,Belushi ' s,Perth Concert Hall,Mama Stones,Boars Head,Underground,Fat Sams,Cadogan Hall,Unity Works,King ' s Lynn Corn Exchange,Black Cherry Lounge,The Waiting Room,New Theatre Oxford,Swansea Grand Theatre,Mozarts,O2 Guildhall Southampton,Sheffield Arena,The Dome,The Watering Hole,Oporto,CCA,Island Bar,Cornershop Bar,The Quay,Apple and Parrot,NQ Live,The Forge,The Georgian Theatre,The Macbeth,J J Whispers,Millennium Forum,The Bull,Old Firehouse,The Glee Club Nottingham,Patterns,Bucks SU,3sixty,The Horse and Groom,Evoke,Grain Barge,De La Warr Pavilion,The Hawth Crawley,The Hug and Pint,Agenda Bar,2 Pigs,The Royal Oak,Pyramids Centre,Electric Palace,ARC Stockton Arts Centre,Area,The Barge,The Con Club,The Iron Road,Fiddlers Club,Gala Cinema and Theatre,Winter Gardens,Tramshed,Miss Peapod ' s Kitchen Cafe,The Frog and Fiddle,The Pheasantry,Sub Club,Newcastle University Students Union,Princess Theatre,The Fort Hotel,Servant Jazz Quarters,The Sands Centre,Hoochie Coochie,Great Hall,Gatecrasher Nottingham,Fallow,Club 85,Preston Guild Hall,Venue Cymru,Tokyo Lincoln,Factory 251,Fresher and Professor,South Devon Arts Centre,Polish Club,The Admiral Bar,Old Cinema Launderette,Lennon ' s Nightclub,The Elgin,The Owl Sanctuary,Leicester Square Theatre,Queen ' s Theatre,Bunters Bar,Bungalows and Bears,Bournemouth Christmas Stage,The Fighting Cocks,The New Continental,The Black Swan,The Playhouse,The Caves,The Baths Hall,Upstairs at the Ritzy,PJ Molloys,10 Feet Tall,Beat Generator Live !,Missoula,Retro Bar & Basement Club,The Plough Arts Centre,Hog and Hosper,The Master Mariner,The Golden Fleece,Mint Club Leeds,Trof Northern Quarter,The Subscription Rooms,Oval Space,BSB The Waterside,Assembly Hall Theatre,Nottingham Trent SU,DAda,The Faversham,Carpe Diem,The Oobleck,Hull City Hall,St George ' s,Halt Bar,Anaya London,O ' Neill ' s St Mary Street Cardiff,Pyramid & Parr Hall,Headrow House,Black Sheep Bar,The Islington Metal Works,Cafe 1001,Buxton Opera House,Lock 91,The Facebar,The Met Lounge,Cleveland Bay,The Rocking Chair,Swindon Arts Centre,Leeds Town Hall,The Spice Of Life,The Living Room,Studio Theatre,Moth Club,James Street Vaults,Notting Hill Arts Club,The Kings Theatre,Lighthouse,Fat Lil ' s,The Courtyard,The Glad Cafe,The Bowery District,Pivo Pivo,The Mash Tun,Victoria Hall,Square & Compass Inn,The Copper Rooms,Paradise by way of Kensal Green,The Square and Compass,The Bunker,St James Social Club,South Sea Live,The Hub,SWG3,Aruba,Scarborough Spa,Zephyr Lounge,Bliss,1865,Oakford Social Club,Divas,Venus,Fox & Firkin,SEC Armadillo,King Billy,Waterside Arts Centre,Concorde Club,Fuel Bar & Music Room,Octagon Centre,Barcadia,The Underground,Monkey,Lock 42,Alexandra Palace,Archangel Basement,Corn Exchange Brighton,The Camden Assembly,Basement Sate,Heebie Jeebies,The Smugglers,Studio 24,The California Tavern,The Parish,New Cross Inn,The Lighthouse,The Old Market,Old Nicks Tavern,The Berkeley Suite,Camino Cruz del Rey,Lincoln Drill Hall,The Lost Garden,Kage,The Winter Gardens,Exeter Corn Exchange,Bristol Folk House,King Georges Hall,River Rooms,Palace Theatre,Basement 45,Le Bateau Bar and Bistro,The Nelson Tavern,The Club,Yardbirds,Fulford Arms,Northumbria SU,Voodoo Lounge,Aberystwyth Arts Centre,Stamford Corn Exchange Theatre,The Big Chill House,The Enterprise,O ' Neill ' s Liverpool,The Coronet,Playhouse Theatre,The Cresset,Cafe Drummond,St John ' s Smith Square,Busker ' s Bar,The Rainbow Warehouse,Hackney Empire,No Sign Bar,The Tobacco Factory,The Library,Electricity Showrooms,Epstein Theatre,The Lemon Grove,Electric Social,Bridgehouse 2,Cellar Bar,Proud Cabaret Brighton,Lakota,The Dog and Partridge,Caird Hall,Liverpool Empire Theatre,Beacon Court Tavern,The Victoria Dalston,DUSA The Union,Hertford Corn Exchange,SEC Centre,The Star Inn,Reef Encounter,Bassment,Alhambra Theatre,Congress Theatre,The Richmond Arms,John Peel Centre,Plowright Theatre,Oh Yeah Music Centre,The Watershed,Dance Tunnel,The White Hart,The Acorn,Leeds Irish Centre,Bang Bang,The Blueberry,Riga Music Bar,Theatr Brycheiniog,Dorking Halls,The Farncombe Cavern,Queens Social Club,Prince Of Wales,The Belgrave,Bridgwater Arts Centre,Sound Music Venue,Royal Hall,The North Laine,The Spa,Vivaz,HedKandi Bar,The George Hotel,Lancaster Grand Theatre,The Jolly Farmer,Oake Manor Golf Club,Rhythm Factory,The Tabernacle,mac Birmingham,Red Lion Folk Club,The Stag and Hounds,Static,13th Note Cafe,The Glee Club Cardiff,Troxy,Corn Exchange Newbury,Civic Theatre,GE Oil and Gas Arena,Sunderland Empire,The Haymarket,Pavlovs Dog,Rivals Nightclub,The Britannia,Catch,The King ' s Head Theatre,O ' Neill ' s Bromley,Eclipse Chelsea,Subtone,Mother Live,The Apple and Parrot,Euphoriom,The Flag,The Chameleon Arts Cafe,Aylesbury Waterside Theatre,Diamond Live Lounge,The Orchard Theatre,The Cannon,The Swan,Goblets,The Hive,The Birdwell Venue,Pavilion Theatre,Kiss Bar,Baby Jupiter,Mono,1939 Peel,The Print Room,Highway,Revival,Hogshead,The Black Horse,O ' Neill ' s Ealing,O ' Neill ' s Reading,The Music Cafe,The Exchange,The Brink,Roper Hall,Bristol Hippodrome,Stafford Gatehouse Theatre,Lightbox,Bread and Roses,Victoria Warehouse,The Gate,Leicester Square,Royal Conservatoire of Scotland,Indiependence,Dempseys,The Qube Project,Brangwyn Hall,The Greys,Avondale House,The Riverside,Hedkandi Bar Clapham,The Queen ' s Head,Bar Bloc,Alnwick Playhouse,Liquid,La Belle Angèle,CBSO Centre,Bishop ' s Cleeve Tithe Barn,Brighton Unitarian Church,Blackwood Miners ' Institute,Tyne Theatre & Opera House,Cramphorn Theatre,The Northern Monkey,The Drum,The Lock Tavern,Loughborough Town Hall,Hatt ' s Bar & Restaurant,The Wig and Quill,The Piano Bar,The Eagle Inn,The Marina Theatre,The Tackeroo,Caffe Americano,The Central Theatre,Patricks Restaurant & Bar,University of Bristol SU,The Bay Horse,O ' Neill ' s Muswell Hill,O ' Neill ' s Peterborough,O ' Neill ' s High Wycombe,Liquid & Maine Street,Wenlock & Essex,Eden LIVE,The Lady Luck,Framptons,Globe at Hay,On The Rocks,Opa !,Little Johnny Russell ' s,Match,Regis Centre,Barnfield Theatre,The Green Room,Centre Stage,St Annes Castle,Middlesbrough Town Hall,Theatre Severn,Korova,Zombie Shack,Bleach,The Brook House Pub,The Spin Jazz Club,The Corner House,Weymouth Pavilion,Haverhill Arts Centre,Westgarth Social Club,Somerset House,The Factory,The Brewhouse Theatre & Arts Centre,Sandsifter,The Square Brewery,Camden Head,The Old Bridge Inn,Hackney Attic,Grimsby Auditorium,Shooshh,Asylum,Quarterhouse,Opera House,Bramall Music Building,The Horseshoe Inn,Chequer Mead Theatre,Wyvern Theatre,New Alexandra Theatre,Nottingham Contemporary,The Quicksilver Mail,Big Jug,St George ' s Church,Brighthelm Centre,Queen of Hoxton,Undertone,Foundry,The Kingsdown Wine Vaults,The Scene Club,WestBeach Restaurant,O ' Neill ' s Richmond,The Ironworks,The Railway Hotel,Fez Club,Canal Bar,The Cumberland Arms,Cowes Parade Village,Jamcafe,Saint Judes,The Magnet,Glyndwr University,Camden Eye,Kingsmeadow Live,Leeds College of Music,Garlands,Playhouse,University of Plymouth SU,Maitai Cocktail and Lounge Bar,The Attic,O ' Neill ' s Cheltenham,O ' Neill ' s Merchant Square Glasgow,Gassy Jacks,Market Tavern,Kingswood Tavern,His Majesty ' s Theatre,The Swan Theatre,Octagon Theatre,Harpenden Public Halls,The Courtyard Theatre,The Cricketers,Corn Exchange Edinburgh,Satans Hollow,The Ocean View Hotel,Wembley Stadium,The Lower Bell,Hope and Anchor,Queen ' s Hotel,Holy Trinity Church,The Office,Stevenage Arts and Leisure Centre,Chambre 69,Rampant Horse Inn,Barley Sheaf,Saint Luke ' s,The Old Bookshop,Chicago ' s,Duke ' s Corner,Conway Hall,Edinburgh Playhouse,The Mash House,O ' Neill ' s Woking,Eden Project,Attik Space,Steels Social Club,The Melting Pot Cafe,Warehouse 34,Hyde Park,St Philip ' s Church,O ' Neill ' s Leeds,O ' Neill ' s Solihull,O ' Neill ' s Winchester,O ' Neill ' s St Albans,Ink Bar,Grand Opera House,Mama Roux ' s,Victoria Theatre,B2,Brooklyn Mixer,The Inchyra Arts Club,The Mothers ' Ruin,The Jazz Cafe Reading,R Bar,Ajani,Store Street ( WHP ),The Star and Shadow Cinema,White Rock Theatre,Marigolds Blues Club,Matthews Hall,Club Revolution,Truck Store,The Taphouse,The Lazy Lizard,Coburgs,New Greenham Arts,Liverpool Guild of Students,Sunray Folk Club,The Westcoast,Vodka,The Other Rooms,Spiegeltent,Liverpool Cathedral,The Packhorse,Manchester Cathedral,Pleasance Theatre,Bertie ' s Bar,The Queens Head Hotel,Union Music Store,Belgrade Theatre,The Geldart,Artrix,The Old Bell Hotel,Katy Dalys,Rough Trade West,The Oystercatcher,The Railway Tavern,Mens Bar,Princes Hall,The Taf,The George,OMEARA,Southport Theatre,Theatre Royal,The Wheatsheaf,Wharf Chambers,Hall For Cornwall,Moon Museum,Gateshead Old Town Hall,Saint Bonaventure ' s Parish Social Club,Socialite Bar,The Back Room,Cult Cafe,The Moorings Bar,Pocklington Arts Centre,Granny ' s,Soho Theatre,Camp and Furnace,Debees Music Bar,The Lansdowne Club,Freddie ' s Bar,Waterside Theatre,MECA Swindon,The Customs House,The Grand Theatre,New Victoria Theatre,Henry Tudor House,Pier Approach Event Space,Warehouse,Fire,Wilton ' s Music Hall,artsdepot,Epsom Playhouse,Milton Keynes Theatre,JD ' s Bar & Grill,CF10,The Roof Gardens,The Yorkshire House,The Bobbin,Marlowe Theatre,Cowes Yacht Haven,The Laundry,The Storytellers,Quay Arts,The Thatch,Club Evissa,Pi Bar,Jumpin ' Jacks,The Empire,Sound Food and Drink,Mayflower Theatre,Qube,The Pipeline,Wagner Hall,Westlands,Elme Hall Hotel,Victoria Park,St Ives Guildhall,The Grove Tavern,Caroline Social Club,Beach Ballroom,Clarks on Lindsay Street,The Bluecoat,Duke Street Garage,Gylly Beach Cafe,Regent Theatre,Scarborough Open Air Theatre,Beck Theatre,The Dog,After Dark,Ebbw Vale Institute,The Brit,Hammersmith Ram,The Horse & Jockey,Apollo,The Blacksheep Bar,Timbuk2,The Nottingham Playhouse,Whitby Pavilion,Ginglik,Sacred Trinity Church,Etihad Stadium,Ort Cafe,Old Fruitmarket,Buskers,The Art House,Brewdog,Potterrow,Liverpool Olympia,Factory,Edinburgh Festival Theatre,The Birds Nest,Castlefield Bowl,Sheffield Cathedral,Record Factory,The Drouthy Cobbler,Pound Arts Centre,The Towngate Theatre,Aatma,W London,University of Birmingham Guild of Students,The Blake Theatre,Butlins Minehead,The Cider Press,Blagclub Ladbroke Grove,The Civic,Kew Gardens,Verve,King ' s Theatre,Pavilion Theatre Worthing,Antwerp Mansion,Beresford Lounge,Nation,The Tyne Bar,Cask & Crispin,The Kings Hall,The Nightjar,Aces & Eights,Main Stage,Harrogate International Centre,Winding Wheel,SWX Bristol,The Alma,Airdrie Town Hall,Café INDIEpendent,The Point,Newport Centre,St Mary ' s Church,The Fat Fox,Frontier,Off The Wall,O ' Neill ' s Shepherds Bush,O ' Neill ' s Brentwood,Zenith Bar,Miss Q ` s,The Grey Horse & Ram Jam Club,Thorpe Park,The Wine Vaults,The Minack Theatre,Oasis Leisure Centre,Nolias 11,The Betsey Trotwood,The Brewhouse,The Stillery,Jersey Opera House,Studio 338,St John - at - Hackney Church,The Blackpool Tower Ballroom,Shoreditch Town Hall,King ' s Somborne Village Hall,All Saints Church,Paper Dress Vintage,Queens Hall Arts Centre,The Woodvale,Pier View,Power Lunches,Bournemouth Rock Cafe,Exile,Darlington Civic Theatre,Harbour Lounge,Lyde Court,The Revelry,Seasons,Bold Street Coffee,The Studio,Fitzherberts,The Coney,Roundabout,Live at the Museum,The Studio Bar,Mickleton Village Hall,The Winking Man Pub,Ricoh Arena,The One Eyed Dog,The Allendale,The Hothouse,Lucorum Bar,The Tempest Inn,The Regent Centre,Bar Sub,Basing House,New Crown Inn,Royal Spa Centre,Matt and Phreds,Whitehall Theatre,Southampton University SU,The Shamrock Bar,The Grafton,Palace Theatre & Grand Hall Complex,Ramsgate Music Hall,The Fifth Hants Volunteer Arms,O ' Rileys,Ropetackle Arts Centre,Westonbirt Arboretum,The Firehouse,High Lodge Visitor Centre,Winchester Discovery Centre,The Hat Factory,Tipsy Bar,Propaganda,The Harringay Arms,Tavern On The Green,The Hippodrome,Criterion Theatre,The Live Room,Ipswich Corn Exchange,Regal Theatre & Cinema,Barnsley Trades Club,The Loop,Jazz After Dark,Tutu ' s,The Tin Angel,Plug N Play,Links Hotel,Royal Function Rooms,Marlborough Theatre,Principality Stadium,Bar Fifty Six,Cobweb Inn,Bath Pavilion,Tokyo Bar,Wolverhampton Grand Theatre,The Neon,Buyers Club,Hull New Theatre,The George Tavern,The Arch,The Riverfront Newport,Cowes Ale House,Sanctuary Live,Yellow Arch Studios,The Corner,The Grapes,The Barrington Theatre,The Beachcomber,Canolfan Ucheldre Centre,Temple Of Boom,The Atrium,The Lemon Factory,Pub / Zoo,Winter Garden,Rich Mix,Edinburgh Castle,The Blue Man,Wycombe Swan,Echoes,The Crescent,The Pleasance Theatre Islington,The Empire Theatre & Cinema,Alfie Birds,Newmarket Racecourse,Shanklin Theatre,Oakengates Theatre,The Academy Theatre,Cafe Riva,Southsea Social Club,The Loft,Hampden Park,The Star of Kings,Inferno,True Blues Club,The Liverpool Academy of Arts,Bognor Regis Music Club,Magic Bean Cafe,The North Star,Earls Court,The Avenue Theatre,The Spotlight,Ayr Town Hall,Rothes Halls,Rivoli Ballroom,Blue Lamp,The Betjeman Arms,The Lanes,Roll for the Soul,Thirsty Scholar,Shepards Wharf,Cannock Chase Forest,Dalby Forest,Sherwood Pines Forest Park,Delamere Forest,Steph ' s : The Club That Rocks !,Eiger Music Studios,Theatre Royal Drury Lane,Nomad Club,Lloyds Amphitheatre,The Chelsea Ram,The Phoenix,Millennium Gallery,The Vectis Tavern,The Zero Lounge,The Cube,Craft Bar & Kitchen,Studio,Carnegie Theatre & Arts Centre,Polish Jazz Café POSK,Rolleston Arms,Picture House Social,Wales Millennium Centre,Octagon Chapel,Chorley Little Theatre,The Y Theatre,Inverness Leisure,Devoran Village Hall,Canavan ' s Peckham Pool Club,Brazz,Stadium of Light,The Cavendish Arms,Hotel Hatfield,The Retreat,Castor Village Hall,Bar Red,Magic Lantern Cinema,Pier Theatre,Nerve Centre,The Band Room,MONO,The Gulbenkian,The Joker,District,Newport Ale House,Strongroom,Chats Palace,The Ship,Winchester Gate,Assembly Rooms of Glastonbury,St James ' s Church,The Miller,Opium,St James Theatre,Rook Lane Arts Centre,Woodlands Centre,The Ceilidh Place,The Deeside Inn,Mustard & Rye,Bedgebury Pinetum & Forest,Piano Kensington,Poole Quay,Oxford Town Hall,Suede Bar,Building Six,The King Lud,The National Bowl,Finsbury Park,Palace Theatre Mansfield,Kelvingrove Park,Boiler Shop,Harlow Playhouse,Church",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "go back",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "please help me",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "shut up",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "stop listening",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "okay",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "stop please",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "help me please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "cancel it",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "i'm done",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "help me with this",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "repeat that please",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "ok thanks",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "cancel navigation",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "i think i'm done",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i'm done with that",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "repeat again",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "show me the next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "go back to the beginning",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "not tomorrow please",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "can you help me here",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "when is the next open mic night in worcester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 17,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 35,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "i want to see a tribute band in birmingham next saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 16,
+          "endPos": 27
+        },
+        {
+          "entity": "Location",
+          "startPos": 32,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "whos playing in worcester next sunday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 16,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "show me who is at the maars bar",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 18,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "who is at the birmingham o2 academy on tuesday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 25,
+          "endPos": 34
+        },
+        {
+          "entity": "Location",
+          "startPos": 14,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "what are metallica doing",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 9,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "how to i get to the purple turtle",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 20,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "which gigs are on near reading",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::Gig",
+          "startPos": 6,
+          "endPos": 9
+        },
+        {
+          "entity": "Location",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "whats on at winchester gate",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 12,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when are royal scottish national orchestra playing",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 9,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "what is on at the riverfront newport",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 18,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "who is at the swan",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 10,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "i want to see a band at the swan",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 14,
+          "endPos": 19
+        },
+        {
+          "entity": "Venue",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "tell me about jason patrick",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "tell me about tony morley",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 14,
+          "endPos": 24
+        },
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what do you know about the spokes",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 23,
+          "endPos": 32
+        },
+        {
+          "entity": "Artist",
+          "startPos": 23,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "what do you know about shoreditch town hall",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 23,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "do you have anything on guns 2 roses",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 24,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "d o you have anything on yellow arch studios",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 25,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "information about royal northern sinfonia",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 18,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "info on the north star",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 8,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "what do you know about the miller",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 23,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "what do you know about the groovinators",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 23,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "search for the twang",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 11,
+          "endPos": 19
+        },
+        {
+          "entity": "Artist",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "search for oxford town hall",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 11,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "are there any open mic nights coming up at the gulbenkian",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 43,
+          "endPos": 56
+        },
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "are there any gigs coming up at lloyds amphitheatre",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 32,
+          "endPos": 50
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "who is in residency at cafe riva",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 23,
+          "endPos": 31
+        },
+        {
+          "entity": "EventType::Residency",
+          "startPos": 10,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a club night in chicago's",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 32,
+          "endPos": 40
+        },
+        {
+          "entity": "EventType::ClubNight",
+          "startPos": 18,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "which tribute acts are playing at the maars bar",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 6,
+          "endPos": 17
+        },
+        {
+          "entity": "Venue",
+          "startPos": 34,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "i want to see some jazz at the lemon factory",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 19,
+          "endPos": 22
+        },
+        {
+          "entity": "Venue",
+          "startPos": 27,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "i'd like to see a choir in worcester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Location",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to see an open mic night in worcester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 17,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 35,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "i want to see a band in bromsgrove",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 14,
+          "endPos": 19
+        },
+        {
+          "entity": "Location",
+          "startPos": 24,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "i'd like to see a metal band in reading",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 18,
+          "endPos": 27
+        },
+        {
+          "entity": "Genre",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Location",
+          "startPos": 32,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i want to see a hip hop band in oxford next tuesday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 24,
+          "endPos": 27
+        },
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 18
+        },
+        {
+          "entity": "Genre",
+          "startPos": 20,
+          "endPos": 22
+        },
+        {
+          "entity": "Location",
+          "startPos": 32,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "i want tyo see a rock covers band near bromsgrove on monday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 22,
+          "endPos": 32
+        },
+        {
+          "entity": "Genre",
+          "startPos": 17,
+          "endPos": 20
+        },
+        {
+          "entity": "Location",
+          "startPos": 39,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "are there any classical gigs taking place in swindon on monday night",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 14,
+          "endPos": 22
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 24,
+          "endPos": 27
+        },
+        {
+          "entity": "Location",
+          "startPos": 45,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "are muse performing near reading on 2nd april",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 25,
+          "endPos": 31
+        },
+        {
+          "entity": "Artist",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "when are muse playing near swindon",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 27,
+          "endPos": 33
+        },
+        {
+          "entity": "Artist",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "when is frank taylor playing near swindon",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 34,
+          "endPos": 40
+        },
+        {
+          "entity": "Artist",
+          "startPos": 8,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "what gigs are on in worcester this saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::Gig",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "Location",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "what open mic nights are on in exeter this friday night",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 5,
+          "endPos": 12
+        },
+        {
+          "entity": "Location",
+          "startPos": 31,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what club nights are on in brighton on wednesday next week",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::ClubNight",
+          "startPos": 5,
+          "endPos": 15
+        },
+        {
+          "entity": "Location",
+          "startPos": 27,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "tell me about muse",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "tell me about frank taylor",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "tell me about ed sheran",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "tell me about simon mcbride",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 14,
+          "endPos": 26
+        },
+        {
+          "entity": "Artist",
+          "startPos": 14,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what do you know about curtis stigers",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 23,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "i want to see a supergroup in bristol",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 14,
+          "endPos": 25
+        },
+        {
+          "entity": "Location",
+          "startPos": 30,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "when are band of friends playing in leeds",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 36,
+          "endPos": 40
+        },
+        {
+          "entity": "Artist",
+          "startPos": 9,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "what gigs are on in glasgow on saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "EventType::Gig",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "Location",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what is the next showcase at bootleggers bar",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 29,
+          "endPos": 43
+        },
+        {
+          "entity": "EventType::Showcase",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "when is the next residency at the horse and groom",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 30,
+          "endPos": 48
+        },
+        {
+          "entity": "EventType::Residency",
+          "startPos": 17,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "when is the next gig at the cannon",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 24,
+          "endPos": 33
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i want to see a vocalist in manchester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 14,
+          "endPos": 23
+        },
+        {
+          "entity": "Location",
+          "startPos": 28,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "which singer/songwriter are playing in hull on sunday afternoon",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 6,
+          "endPos": 22
+        },
+        {
+          "entity": "Location",
+          "startPos": 39,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "what is the next event at the print",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 26,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "whats on at cavern club",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "whos on at laverys bar",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "open mic nights at laverys bar",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 19,
+          "endPos": 29
+        },
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to see blues in aberdeen",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 14,
+          "endPos": 18
+        },
+        {
+          "entity": "Location",
+          "startPos": 23,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i want to see a rocj band in bristol",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 16,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to go to a blues gig in ipswich",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 24,
+          "endPos": 26
+        },
+        {
+          "entity": "Location",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "whos is playing at the o2 academy in oxford",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 23,
+          "endPos": 32
+        },
+        {
+          "entity": "Location",
+          "startPos": 37,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "whos is playing at the o2 in leeds",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 23,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "i want to see a bon jovi tribute act in worcester on saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 25,
+          "endPos": 35
+        },
+        {
+          "entity": "Location",
+          "startPos": 40,
+          "endPos": 48
+        },
+        {
+          "entity": "Artist",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i want to see a metal gig in leicester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "i want to see a metal gig in ipswich",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to see a blues gig in ipswich",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to see a reggae gig in chichester",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 21
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 23,
+          "endPos": 25
+        },
+        {
+          "entity": "Location",
+          "startPos": 30,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "i want to see a metal gig in bath",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "i want to see a metal gig in droitwich spa",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 37
+        },
+        {
+          "entity": "Location",
+          "startPos": 39,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "whos is playing at the o2 in oxford",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "i want to see a metal gig in droitwich",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 22,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "when are metallica playing next",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Artist",
+          "startPos": 9,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "i want to see a rock band in bristol",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 21,
+          "endPos": 24
+        },
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 19
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i want to go to an opem mic night in worcester",
+      "intent": "EntitySearch",
+      "entities": [
+        {
+          "entity": "EventType::OpenMic",
+          "startPos": 19,
+          "endPos": 26
+        },
+        {
+          "entity": "Location",
+          "startPos": 37,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "i want to see a heavy metal gig in worcester on saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 22,
+          "endPos": 26
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 28,
+          "endPos": 30
+        },
+        {
+          "entity": "Location",
+          "startPos": 35,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "what is on at the marrs bar in worcester next week",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Venue",
+          "startPos": 18,
+          "endPos": 26
+        },
+        {
+          "entity": "Location",
+          "startPos": 31,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "what time does t02110931485097b1 start",
+      "intent": "EventSearch",
+      "entities": []
+    },
+    {
+      "text": "who is playing in worcester on sunday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 18,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i want to see a rock band in reading on saturday",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 21,
+          "endPos": 24
+        },
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 19
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for rock band gigs in worcester on saturday night",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "ArtistType",
+          "startPos": 21,
+          "endPos": 24
+        },
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 19
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 26,
+          "endPos": 29
+        },
+        {
+          "entity": "Location",
+          "startPos": 34,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for rock gigs in worcester on saturday night",
+      "intent": "EventSearch",
+      "entities": [
+        {
+          "entity": "Genre",
+          "startPos": 16,
+          "endPos": 19
+        },
+        {
+          "entity": "EventType::Gig",
+          "startPos": 21,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "Move the BBQ party to Friday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Alright I am confirming",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "A yes from me",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Okay for now",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yep agreed",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Sure I confirm",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "yes i saw",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Yeah ohh I confirm",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "good I am confirming",
+      "intent": "Utilities.Confirm",
+      "entities": []
+    },
+    {
+      "text": "Cancel brawl",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel expanse",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "wait never mind i just told you never mind",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "\"reject it, cancel\"",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "I want to cancel",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel silent hours",
+      "intent": "Utilities.Cancel",
+      "entities": []
+    },
+    {
+      "text": "Go back to google please",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "\"go back, why are you here?\"",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "Go back.",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "go back on music player",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "Never mind go back",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "go back to my contacts",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "go back to amazon",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "i need to go back",
+      "intent": "Utilities.Goback",
+      "entities": []
+    },
+    {
+      "text": "I need your help",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "Can you help me?",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help me to start",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help me to understand more please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "help with my device please",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "please help me i want to finish",
+      "intent": "Utilities.Help",
+      "entities": []
+    },
+    {
+      "text": "repeat 10 times.",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat my name three times",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat start time",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat last question please",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat selection please",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat it again",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat again please",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat that last joke",
+      "intent": "Utilities.Repeat",
+      "entities": []
+    },
+    {
+      "text": "show me the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Go Next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "can you click next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "second one please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "Show the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "the next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "let me go next please",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "please go next",
+      "intent": "Utilities.ShowNext",
+      "entities": []
+    },
+    {
+      "text": "please show previous.",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Show the previous please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "I want to display the previous message",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "previous one please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Click on previous for me",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Let me check the previous item please",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Show me the previous",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Can you show me the previous please?",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "If you would please turn to previous",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Display the previous for me",
+      "intent": "Utilities.ShowPrevious",
+      "entities": []
+    },
+    {
+      "text": "Please restart the search",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Let me start it again from scratch",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Restart please",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Can you restart for me?",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "I want to do restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Let's restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Delete that and start again",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "Please do restarting",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "I need to begin over and restart",
+      "intent": "Utilities.StartOver",
+      "entities": []
+    },
+    {
+      "text": "can just be quiet you're giving me a headache",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "i don't want that. go back home",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Quit help",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Shut up.",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "stop it you are really annoying",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "Stop saying that please",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "phone be quiet for 5 minutes.",
+      "intent": "Utilities.Stop",
+      "entities": []
+    },
+    {
+      "text": "I am done.",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "Let it finished please",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "we finished our last task",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "ohh finished",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "yeah l just finished this one",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "finished please",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i'm done y'all",
+      "intent": "Utilities.FinishTask",
+      "entities": []
+    }
+  ]
+}
