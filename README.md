@@ -5,6 +5,8 @@ In the spring of 2017, we worked with [Gigseekr](http://www.gigseekr.com/) on a 
 
 In this episode we build on the [LUIS and HowHappy.co.uk mashup](https://channel9.msdn.com/Shows/Web-Hack-Wednesday/LUIS-and-HowHappycouk-mashup) episode we did in series 2 by looking at what is new with LUIS and some of the more complex scenarios LUIS now supports - all in the context of GigSeekr.
 
+If you want to dive deeper on the work we did with Gigseekr, you can read the full technical case study [Gigseekr builds a live music discovery bot using Bot Framework and LUIS](https://microsoft.github.io/techcasestudies/bot%20framework/cognitive%20services/2017/07/31/gigseekr.html).
+
 ## What/who is Gigseekr?
 Gigseekr are a small company based in the UK who describe themselves as follows "gigseekr is a live music discovery service committed to helping you find tickets and stay up to date with tours & events across the UK".
 
@@ -47,11 +49,28 @@ The `EntitySearch` intent supports users searching for information on specific a
 * `tell me about [ $Artist ]`
 * `info on [ $Venue ]`
 
-### Pre-built Domain Intent
-We also used a the pre-built domain intent around `utilities` which helps facilitate common ultility utterances such as "Cancel", "Start again" and "Help"
+### Pre-built Models
+We also used a pre-built domain intent around utilities which helps facilitate common utility utterances such as "Cancel", "Start again" and "Help".
 
+Pre-built domains are a new feature in LUIS which encompass pre-built sets of intents and entities that work together for domains or common categories of apps. The pre-built domains have been pre-trained and are ready for use. The intents and entities in a pre-built domain are fully customizable once you've added them to your app - you can train them with utterances from your system so they work for your users. You can use an entire pre-built domain as a starting point for customization, or just borrow a few intents or entities from a domain for your application. 
+
+Read more on [pre-built entities](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/pre-builtentities) and [pre-built domains](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) as well as the [Cortana pre-built app](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/cortana-prebuilt-app).
 
 ## Features
+Features are a distinguishing trait or attribute of data that your system observes. You add features to a language model, to provide hints about how to recognize input that you want to label or classify. Features help LUIS recognize both intents and entities, but features are not intents or entities themselves. Instead, features might provide examples of related terms, or a pattern to recognize in related terms. 
+
+There are two type of feature, both of which are used in the Gigseekr model:
+
+### Phrase List
+[Phrase lists](https://github.com/Microsoft/Cognitive-Documentation/blob/master/Content/en-us/LUIS/Add-Features.md) are a list of words/phrases that belong to eth same class and should be treated similarly.
+
+The maximum length of a phrase list is 5000 items. You may have a maximum of 10 phrase lists per LUIS app. 
+
+Gigseekr use phrase lists to help LUIS identify Artist, ArtistType (Band, solo, rapper etc), Genre (Rocks, Blues etc), Venues and UK Locations (cities, towns, villages).
+
+Location was implemented as a phrase list rather than the pre-built 'geography' entities because we found that the pre-built entity does not do a great job of recognising UK locations, especially smaller ones such as towns and villages. This phrase list was trained with the top 1000 uk place-names by population.
+
+### Pattern
 
 ## Train and Test
 
