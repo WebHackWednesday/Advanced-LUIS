@@ -109,6 +109,9 @@
       "name": "Location"
     },
     {
+      "name": "Ticket"
+    },
+    {
       "name": "Venue"
     }
   ],
@@ -150,7 +153,13 @@
       "activated": true
     }
   ],
-  "regex_features": [],
+  "regex_features": [
+    {
+      "name": "Ticket",
+      "pattern": "([t])(\\d+)[b][1]",
+      "activated": true
+    }
+  ],
   "utterances": [
     {
       "text": "go back",

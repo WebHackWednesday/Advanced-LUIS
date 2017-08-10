@@ -1,5 +1,5 @@
 # Advanced-LUIS
-This is the companion repo to the Web Hack Wednesday series 3 episode on Advanced LUIS with Gigseekr.
+This is the companion repository to the Web Hack Wednesday series 3 episode on Advanced LUIS with Gigseekr.
 
 In the spring of 2017, we worked with [Gigseekr](http://www.gigseekr.com/) on a chat bot application that enables searching for live music events. The chat bot was written using the [Microsoft Bot Framework](https://dev.botframework.com/) and makes great use of [Language Understanding Intelligent Service (LUIS)](https://azure.microsoft.com/en-gb/services/cognitive-services/language-understanding-intelligent-service/). 
 
@@ -62,7 +62,7 @@ Features are a distinguishing trait or attribute of data that your system observ
 There are two type of feature, both of which are used in the Gigseekr model:
 
 ### Phrase List
-[Phrase lists](https://github.com/Microsoft/Cognitive-Documentation/blob/master/Content/en-us/LUIS/Add-Features.md) are a list of words/phrases that belong to eth same class and should be treated similarly.
+[Phrase lists](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-feature) are a list of words/phrases that belong to the same class and should be treated similarly.
 
 The maximum length of a phrase list is 5000 items. You may have a maximum of 10 phrase lists per LUIS app. 
 
@@ -71,7 +71,14 @@ Gigseekr use phrase lists to help LUIS identify Artist, ArtistType (Band, solo, 
 Location was implemented as a phrase list rather than the pre-built 'geography' entities because we found that the pre-built entity does not do a great job of recognising UK locations, especially smaller ones such as towns and villages. This phrase list was trained with the top 1000 uk place-names by population.
 
 ### Pattern
+[Pattern Features](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-feature) specify a regular expression to help LUIS recognize regular patterns that are frequently used in your application's domain.
+
+A good example in the live music domain is recognition of ticket references. One of the main ticket selling companies is 'WeGotTickets' who issue ticket confirmation numbers which match this formula [t][14 digit number][b1].
+
+A pattern feature using the `([t])(\d+)[b][1]` as a regex pattern would help LUIS to recognise 'WeGotTickets' confirmation numbers as tickets and would enable thing like users getting details of an event that they already have a ticket for.
 
 ## Train and Test
+The training and testing capability has improved to support interactive testing where you can test with specific phrases and import batches of phrases to test the capabilities of the model 
 
 ## Summary
+In summary, the LUIS user interface and functionality has improved a lot since our initial episode in 2016. Companies like GigSeekr are using LUIS to create compelling natural language conversational interface on bots, mobile apps and web applications.
