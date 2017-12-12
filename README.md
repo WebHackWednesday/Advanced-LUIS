@@ -1,5 +1,5 @@
 # Advanced-LUIS
-This is the companion repository to the Web Hack Wednesday series 3 episode on Advanced LUIS with Gigseekr.
+This is the companion repository to the Web Hack Wednesday series 3 episode on Advanced LUIS with Gigseekr. See the video at https://youtu.be/3eZqSJlbkEI
 
 In the spring of 2017, we worked with [Gigseekr](http://www.gigseekr.com/) on a chat bot application that enables searching for live music events. The chat bot was written using the [Microsoft Bot Framework](https://dev.botframework.com/) and makes great use of [Language Understanding Intelligent Service (LUIS)](https://azure.microsoft.com/en-gb/services/cognitive-services/language-understanding-intelligent-service/). 
 
